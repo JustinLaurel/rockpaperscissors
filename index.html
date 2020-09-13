@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sel">
+            <div class="sel__intro">Make your move:</div>
+            <div class="sel__rock sel--border sel--active"><img class="sel--img" src="img/rock.png"></div>
+            <div class="sel__pap sel--border sel--active"><img class="sel--img" src="img/paper.png"></div>
+            <div class="sel__scis sel--border sel--active"><img class="sel--img" src="img/scissors.png"></div>
+        </div>
+
+        <div class="info">
+            <div class="info__cpMove">
+                <div class="info__cpMove__intro">Computer picked:</div>
+                <div class="info__cpMove__move"></div>
+            </div>
+            <table class="info__score">
+                <thead>
+                    <th colspan="2">Score</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="info__score__pheader info__score--width info__score--border">You</th>
+                        <th class="info__score__cpheader info__score--width info__score--border">Opponent</th>
+                    </tr>
+                    <tr>
+                        <td class="info__score__pscore info__score--border info__score--center">
+                            0</td>
+                        <td class="info__score__cpscore info__score--border info__score--center">
+                            0</td>
+                    </tr>
+                </tbody>
+                <p class="info__score__winner"></p>
+            </table>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
